@@ -28,4 +28,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build and push image to registry
         run: |
-          docker buildxbuild --push -t ${{ secrets.DOCKER_TAG}} .
+          docker buildx build --push -t ${{ secrets.DOCKER_TAG}} .
